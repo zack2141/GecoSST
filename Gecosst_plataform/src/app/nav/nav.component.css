@@ -1,0 +1,26 @@
+nav{
+    height: 10vh;
+    width:  100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--azul-oscuro) !important;
+}
+
+.nav-link{
+    color: var(--blanco) !important;
+}
+
+
+.nav-link:hover{
+
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    background-color: var(--verde-principal) !important;
+}
+
+.nav-link:active{
+     background-color: var(--verde-principal) !important;
+}
+

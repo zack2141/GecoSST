@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+
+    /*paleta de colores global*/
+    --azul-principa: #0D5AA7;
+    --azul-oscuro: #0A437C;
+    --verde-principal:#2FA85A;
+    --verde-oscuro: #1F7A42;
+    --naranja: #F5A623;
+    --grises:#F4F4F4;
+    --blanco: #fff;
+
+    /* tipografía*/
+    --letra-principal: 'Inter', sans-serif;
+    --letra-color-blanco: #ffffff;
+    --letra-color-negro: #000000;
+
+}
