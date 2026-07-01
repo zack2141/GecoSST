@@ -7,7 +7,7 @@ body{
 :root{
 
     /*paleta de colores global*/
-    --azul-principa: #0D5AA7;
+    --azul-principal: #0D5AA7;
     --azul-oscuro: #0A437C;
     --verde-principal:#2FA85A;
     --verde-oscuro: #1F7A42;
@@ -16,7 +16,7 @@ body{
     --blanco: #fff;
 
     /* tipografía*/
-    --letra-principal: 'Inter', sans-serif;
+    --letra-sans-serif: 'Montserrat', sans-serif;
     --letra-color-blanco: #ffffff;
     --letra-color-negro: #000000;
 

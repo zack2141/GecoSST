@@ -1,0 +1,18 @@
+#presentacion{
+    height: 70vh;
+    width: 100%;
+    background-color: var(--azul-oscuro);
+}
+
+aside{
+    height: 100%;
+    width: 50%;
+    background-color: var(--azul-principal);
+    padding: 8% 0% 0% 5%;
+}
+
+h1{
+    font-size: 4rem;
+    color: var(--blanco);
+    font-family: var(--letra-principal);
+}

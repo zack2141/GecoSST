@@ -4,7 +4,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--azul-oscuro) !important;
+    background-color: var(--azul-principal) !important;
 }
 
 .nav-link{
