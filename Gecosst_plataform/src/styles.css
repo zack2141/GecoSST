@@ -8,7 +8,7 @@ body{
 
     /*paleta de colores global*/
     --azul-principal: #0D5AA7;
-    --azul-oscuro: #0A437C;
+    --azul-oscuro: #032445;
     --verde-principal:#2FA85A;
     --verde-oscuro: #1F7A42;
     --naranja: #F5A623;
@@ -16,7 +16,7 @@ body{
     --blanco: #fff;
 
     /* tipografía*/
-    --letra-sans-serif: 'Montserrat', sans-serif;
+    --letra-Montserrat: 'Montserrat', sans-serif;
     --letra-color-blanco: #ffffff;
     --letra-color-negro: #000000;
 

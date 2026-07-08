@@ -1,10 +1,12 @@
 nav{
-    height: 10vh;
+    min-height: 10vh;
+    max-height: auto;
     width:  100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: var(--azul-principal) !important;
+    text-align: center;
 }
 
 .nav-link{
