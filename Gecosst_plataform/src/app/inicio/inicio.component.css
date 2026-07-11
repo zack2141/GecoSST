@@ -1,11 +1,20 @@
 #presentacion {
     height: 70vh;
+    max-height: auto;
     width: 100%;
     background-color: var(--azul-oscuro);
     display: flex;
 }
 
-aside {
+#sistema-btn{
+    margin: 5% 0 0 0;
+    height: 7vh;
+    width: 30%;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#presentacion aside {
     height: 100%;
     width: 50%;
     padding: 8% 0% 0% 5%;
@@ -19,13 +28,13 @@ aside {
     background-position: center;
 }
 
-aside h1 {
+#presentacion aside h1 {
     font-size: 4rem;
     color: var(--blanco);
     font-family: var(--letra-principal);
 }
 
-aside h2 {
+#presentacion aside h2 {
     font-size: 2rem;
     color: var(--blanco);
     font-family: var(--letra-principal);
@@ -36,7 +45,8 @@ aside h2 {
     height: 50vh;
     width: 100%;
     text-align: center;
-    background-color: rgb(255, 255, 255);
+    align-content: center;
+    background: linear-gradient(to right, var(--azul-oscuro), white 10% 90%, var(--azul-oscuro));
 }
 
 #que-es-gecosst h1 {
@@ -45,24 +55,34 @@ aside h2 {
     font-family: var(--letra-principal);
 }
 
+#que-es-gecosst p {
+    font-size: 1.3rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
 /*--------------------------------------------------------------*/
 #empresas-aliadas {
     height: 50vh;
     width: 100%;
     padding: 4vh 0 0 0;
     text-align: center;
-    background-color: rgb(113, 170, 32);
+    border-top: 10px solid;
+    border-bottom: 10px solid;
+    border-image: Linear-gradient(to right, transparent, var(--azul-oscuro), transparent) 1;
 }
 
-#carouselExample{
+#carouselExample {
     height: 50%;
     width: 50%;
     margin: 0 auto;
 }
-.carousel-item{
+
+.carousel-item {
     margin-top: 2%;
-    
+
 }
+
 .estandar-img-alianza {
     height: 30vh;
     width: 70% !important;
@@ -73,73 +93,284 @@ aside h2 {
     background-repeat: no-repeat;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+    /*background-color: var(--azul-oscuro) !important;*/
+    background: radial-gradient(var(--azul-oscuro), transparent);
+    height: 40%;
+    width: 10%;
+    border-radius: 50%;
+    margin-top: 15%;
+
+}
+
 /*----------------------------------------------------------------------*/
 
-#features{
+#features {
     height: 100vh;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(5, 5fr);
     grid-template-rows: repeat(3, 2fr);
     background-color: var(--grises);
+    background-color: rgb(231, 232, 233);
+
+    border-bottom: 10px solid;
+    border-image: Linear-gradient(to right, transparent, var(--azul-oscuro), transparent) 1;
 }
 
-#features h1{
-    padding: 5vh 0 0 0 ;
+#features h1 {
+    padding: 5vh 0 0 0;
     grid-column: 1/ 6;
     text-align: center;
+    height: 17vh;
     grid-row: 1 / 1;
     font-size: 4rem;
-    color: var(--azul-oscuro);
+    color: var(--blanco);
     font-family: var(--letra-principal);
-    background-color: aqua;
+    background-color: var(--azul-oscuro);
 }
 
-.card{
+.card {
     height: 35vh;
     width: 80%;
-    background-color: var(--azul-principal);
+    background-color: white;
     border-radius: 20px;
     margin-bottom: 4vh;
     margin-left: 10%;
+    box-shadow: 0 7px 11px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+
+    padding: 0 4% 0 4%;
+
+    align-items: center;
+    justify-content: center;
 }
 
-.card-1{
+.icon {
+    width: 40%;
+    height: 10vh;
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+.card-1 {
 
     grid-column: 2 / 2;
     grid-row: 2 / 3;
-    
+
 }
-.card-2{
+
+.card-2 {
 
     grid-column: 3 / 3;
     grid-row: 2 / 3;
-    
+
 }
-.card-3{
+
+.card-3 {
 
     grid-column: 4 / 4;
     grid-row: 2/ 3;
-    
+
 }
-.card-4{
+
+.card-4 {
 
     grid-column: 2 / 2;
     grid-row: 3 / 3;
-    
+
 }
-.card-5{
+
+.card-5 {
 
     grid-column: 4 / 4;
     grid-row: 3 / 3;
-    
+
 }
 
-.card:hover{
-    
+.card:hover {
+
     transition: all 0.5s ease-in-out;
     scale: 1.1;
-    transform: translateY(-5%);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     cursor: pointer;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+#por-que-gecosst {
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+#servicios-principales {
+    height: 50vh;
+    width: 65%;
+    float: left;
+
+}
+
+#servicios-principales h2 {
+
+    margin: 2% 0 0 2.3%;
+    width: 30%;
+    font-size: 2rem;
+    color: var(--azul-principal);
+    font-family: var(--letra-principal);
+
+}
+
+#servicios {
+    height: 30vh;
+    width: 95%;
+    margin: 2% auto;
+    display: flex;
+
+
+}
+
+.servicio {
+    height: 100%;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 2.5px solid rgb(199, 192, 192);
+    padding: 2%;
+
+}
+
+.servicio p {
+    font-size: 1.2rem;
+    font-family: var(--letra-principal);
+}
+
+.container-label {
+    height: 10vh;
+    margin: 0 0 2% 0;
+}
+
+.container-label .icon {
+    height: 7vh;
+    width: 40%;
+    float: left;
+    margin: 0 0 5% 0;
+}
+
+.container-label label {
+    float: right;
+    height: 7vh;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+}
+
+
+
+
+#testimonios {
+    height: 100vh;
+    width: 35%;
+    float: right;
+    padding: 2%;
+
+    border-left: 5px solid;
+    border-image: linear-gradient(to top, transparent, var(--azul-oscuro), transparent) 1;
+}
+
+.testimonio {
+
+    height: 25vh;
+    border-top: 2.5px solid rgb(199, 192, 192);
+    border-bottom: 2.5px solid rgb(199, 192, 192);
+    margin: 5% 0 0 0;
+
+    padding: 2%;
+
+}
+
+/*-------------------------------------------------------------------*/
+
+/*Por que escoger GECOSST*/
+
+#por-que-escogernos {
+    height: 50vh;
+    width: 65%;
+    background-color: rgb(255, 255, 255);
+    float: left; 
+    border-top: 4px solid;
+    border-image: Linear-gradient(to right, transparent, grey, transparent) 1;
+}
+
+#por-que-escogernos h1 {
+
+    margin: 2% 0 0 2.3%;
+    width: 30%;
+    font-size: 2rem;
+    color: var(--azul-principal);
+    font-family: var(--letra-principal);
+
+}
+
+#experiencia,
+#tecnologia {
+    height: 35vh;
+    width: 40%;
+    background-color: rgb(233, 233, 19);
+    float: left;
+    margin: 2% auto auto 2.3%;
+
+    text-align: center;
+}
+
+
+#tecnologia aside,
+#experiencia aside {
+
+    width: 25%;
+    height: 35vh;
+    background-color: rgb(255, 255, 255);
+    float: left;
+}
+
+#tecnologia :nth-child(2),
+#experiencia :nth-child(2) {
+
+    width: 75%;
+    height: 15vh;
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    float: right;
+    padding: 2%;
+}
+
+#tecnologia :nth-child(2) p,
+#experiencia :nth-child(2) p {
+    font-size: 1.2rem;
+    font-family: var(--letra-principal);
+
+}
+
+
+
+#tecnologia :nth-child(3),
+#experiencia :nth-child(3) {
+
+    width: 37.5%;
+    height: 20vh;
+    background-color: rgb(255, 255, 255);
+    float: right;
+}
+
+#tecnologia :nth-child(4),
+#experiencia :nth-child(4) {
+
+    width: 37.5%;
+    height: 20vh;
+    background-color: rgb(255, 255, 255);
+    float: right;
 }
