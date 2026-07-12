@@ -1,1 +1,69 @@
-<p>analisis-ia works!</p>
+<main>
+
+
+    <div id="container-analisis-ia">
+
+        <div id="titulo">
+
+            <h1>Análisis de IA</h1>
+
+
+
+        </div>
+
+        <div id="busqueda">
+
+        </div>
+
+
+        <form>
+
+            <label for="">Seleccione un area para iniciar el analisis</label>
+            <select class="form-select" aria-label="Default select example" (change)="Analizar_IA()">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+
+            <label for="">seleccione el tipo de analisis a realizar</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">Identificación de peligros</option>
+                <option value="2">Analisis de vulnerabilidad y amenazas</option>
+                <option value="3">Evaluación de riesgos</option>
+            </select>
+
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Añadir instrucciones adicionales para el analisis</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+            <div id="barra-botones">
+
+                <button type="button" class="btn btn-primary" [disabled]="habilitar_btn_analizar">Realizar analisis</button>
+                <button type="button" class="btn btn-success" [disabled]="habilitar_btn_guardado">Guardar analisis</button>
+
+
+            </div>
+
+
+        </form>
+
+        <div id="resultadoIA">
+
+            <div id="respuesta">
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+    <app-barra-herramientas></app-barra-herramientas>
+
+
+</main>

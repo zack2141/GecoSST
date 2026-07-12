@@ -17,7 +17,9 @@ export class BarraHerramientasComponent {
     this.router.navigate(['/plataforma/registro-area']);
   }
 
-  redireccionar_Analisis_IA(){}
+  redireccionar_Analisis_IA(){
+    this.router.navigate(['/plataforma/analisis-ia']);
+  }
 
   redireccionarNotificaciones(){}
 
