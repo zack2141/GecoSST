@@ -17,5 +17,5 @@ export const routes: Routes = [
     // Componentes de la plataforma
     //------------------------------------------------------------------------------
     { path: 'plataforma', component: DashboardComponent },
-    { path: 'plataforma/registro-area', component: RegistroAreaComponent },
+    { path: 'plataforma/registro-area', component: RegistroAreaComponent }
 ];
