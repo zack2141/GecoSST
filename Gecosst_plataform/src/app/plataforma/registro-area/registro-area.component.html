@@ -1,1 +1,88 @@
-<p>registro-area works!</p>
+<main>
+
+
+    <div id="container-registro-area">
+
+        <div id="titulo">
+            <h1>Registro de Área</h1>
+        </div>
+
+        <div id="busqueda">
+
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient’s username"
+                    aria-label="Recipient’s username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="buscar_area()">Button</button>
+            </div>
+
+        </div>
+
+        <form action="">
+
+            <div id="datos">
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre del area</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Cantidad de personas que la
+                        utilizan</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Horarios en que se utiliza</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Tipos de personal que utilizan el
+                        area</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+
+
+            </div> <!-- fin de div#datos-->
+
+
+            <div id="ubicacion">
+
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Descirpción de uso del Area</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Elementos que contiene el área</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+
+
+            </div> <!-- fin de div#ubicacion-->
+
+
+
+
+
+            <div id="barra-opciones">
+                <button type="button" class="btn btn-success" *ngIf="botones_barra==false">Guardar información</button>
+                <button type="button" class="btn btn-primary" *ngIf="botones_barra==true">Modificar</button>
+                <button type="button" class="btn btn-danger" *ngIf="botones_barra==true">Eliminar</button>
+            </div>
+        </form>
+
+
+
+    </div>
+
+    <app-barra-herramientas></app-barra-herramientas>
+
+
+</main>

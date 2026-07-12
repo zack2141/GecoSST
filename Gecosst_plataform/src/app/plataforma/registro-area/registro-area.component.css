@@ -1,0 +1,110 @@
+main {
+    height: 105vh;
+    width: 100%;
+
+}
+
+
+#container-registro-area {
+
+    height: 90vh;
+    width: 85%;
+    background-color: rgb(227, 232, 232);
+    margin: 2% auto;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+    border-radius: 20px;
+    box-shadow: 7px 6px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+#titulo {
+
+    grid-column: 1/3;
+    grid-row: 1/1;
+
+
+    display: flex;
+    align-items: center;
+    padding: 2%;
+
+    h1 {
+        font-size: 4rem;
+        font-weight: bold;
+        color: var(--azul-principal);
+    }
+}
+
+#busqueda {
+
+
+    grid-column: 3/4;
+    grid-row: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+
+#container-registro-area form {
+
+    grid-column: 1/4;
+    grid-row: 2/6;
+    border: 3px solid rgb(202, 200, 200);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 2% 5%;
+
+}
+
+form label{
+    font-size: 1.4rem;
+}
+
+
+#datos {
+    grid-column: 1/2;
+    grid-row: 1/3;
+
+    padding: 3%;
+}
+
+#ubicacion {
+    grid-column: 2/3;
+    grid-row: 1/3;
+
+    padding: 3%;
+
+    border-left: 7px solid;
+    border-image: linear-gradient(transparent, rgb(202, 200, 200), transparent) 1;
+}
+
+
+#barra-opciones {
+
+    width: 80%;
+    background-color: rgb(255, 251, 251);
+    height: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2%;
+    grid-column: 1/3;
+    grid-row: 3/3;
+    border: 2px solid rgb(174, 173, 173);
+    border-radius: 20px;
+
+
+}
+
+#barra-opciones button{
+
+    width: 15vw;
+
+}
