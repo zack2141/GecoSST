@@ -1,1 +1,29 @@
-<p>inicio-sesion works!</p>
+<main>
+
+    <div id="login-box">
+
+        <form action="submit" (click)="validar_credenciales()">
+
+
+
+            <h2>Bienvenido</h2>
+            <p>Ingresa tus datos para iniciar sesión</p>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo electrónico">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Contraseña">
+            </div>
+
+            <button type="submit" class="btn btn-success">Iniciar sesión</button>
+
+
+        </form>
+
+    </div>
+
+</main>
