@@ -21,5 +21,5 @@ export const routes: Routes = [
     { path: 'plataforma/dashboard', component: DashboardComponent },
     { path: 'plataforma/registro-area', component: RegistroAreaComponent },
     { path: 'plataforma/analisis-ia', component: AnalisisIAComponent },
-    { path: 'plataforma/registro-in-ac-ci', component: RegistroInAcCiComponent }
+    { path: 'plataforma/reportes', component: RegistroInAcCiComponent }
 ];
