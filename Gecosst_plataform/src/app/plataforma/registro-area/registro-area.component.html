@@ -23,28 +23,28 @@
 
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Nombre del area</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
+                    <input [(ngModel)]="area.nombre" type="text" class="form-control" id="exampleFormControlInput1" name="nombre"
+                        placeholder="Ejemplo: Contabilidad">
                 </div>
 
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Cantidad de personas que la
                         utilizan</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
+                    <input type="number" [(ngModel)]="area.cantidadPersonas" name="cantidadPersonas"  class="form-control" id="exampleFormControlInput1"
+                        placeholder="Ejemplo: 20">
                 </div>
 
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Horarios en que se utiliza</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
+                    <input type="text"  [(ngModel)]="area.horarios" name="horarios" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Ejemplo: 8:00 AM - 5:00 PM">
                 </div>
 
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Tipos de personal que utilizan el
                         area</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
+                    <input type="text" [(ngModel)]="area.tiposPersonal" name="tiposPersonal" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Ejemplo: Administrativo">
                 </div>
 
 
@@ -55,12 +55,12 @@
 
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Descirpción de uso del Area</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control"  [(ngModel)]="area.descripcion" name="descripcion" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
 
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Elementos que contiene el área</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control"  [(ngModel)]="area.elementos" name="elementos" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
 
 
