@@ -20,19 +20,19 @@ export class AreaServiceService {
 
     const params= new HttpParams()
     .set("id", id);
-    return this.http.post<area>(`${this.URL}/buscar_area `, {params: params});
+    return this.http.post<area>(`${this.URL}/buscar_area_id`, {params: params});
   }
 
   agregar(
     area:area
   ):Observable<area>{
-    return this.http.post<area>(`${this.URL}/guardar_area `,area);
+    return this.http.post<area>(`${this.URL}/guardar_area`,area);
   }
 
   modificar(
     area:area
   ):Observable<area>{
-    return this.http.put<area>(`${this.URL}/actualizar_area `,area);
+    return this.http.put<area>(`${this.URL}/actualizar_area`,area);
   }
 
   eliminar_por_id(
@@ -41,6 +41,6 @@ export class AreaServiceService {
 
     const params= new HttpParams()
     .set("id", id);
-    return this.http.post<area>(`${this.URL}/eliminar_area `, {params: params});
+    return this.http.post<area>(`${this.URL}/eliminar_area`, {params: params});
   }
 }
