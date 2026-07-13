@@ -21,7 +21,13 @@ export class BarraHerramientasComponent {
     this.router.navigate(['/plataforma/analisis-ia']);
   }
 
-  redireccionarNotificaciones(){}
+  redireccionar_dashboard(){
+    this.router.navigate(['/plataforma/dashboard']);
+  }
+
+  redireccionar_Reportes(){
+    this.router.navigate(['/plataforma/reportes']);
+  }
 
   redireccionarDescargas(){}
 

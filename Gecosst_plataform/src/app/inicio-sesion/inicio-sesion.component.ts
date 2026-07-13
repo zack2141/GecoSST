@@ -21,7 +21,7 @@ export class InicioSesionComponent {
 
   ingreso_plataforma(){
 
-    this.router.navigate(['/plataforma'])
+    this.router.navigate(['/plataforma/dashboard'])
 
   }
 
