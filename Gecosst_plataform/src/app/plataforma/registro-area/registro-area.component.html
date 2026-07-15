@@ -10,9 +10,13 @@
         <div id="busqueda">
 
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Recipient’s username"
-                    aria-label="Recipient’s username" aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="buscar_area()">Button</button>
+                <label class="input-group-text" for="inputGroupSelect01">Opciones</label>
+                <select class="form-select" id="inputGroupSelect01" [(ngModel)]="id_seleccionado">
+                    <option selected>seleccione una opción</option>
+                    <option *ngFor="let item of lista_nombres_areas" [ngValue]="item[0]">{{item[1]}}</option>
+                </select>
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                    (click)="buscar_area()">Button</button>
             </div>
 
         </div>
@@ -23,28 +27,28 @@
 
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Nombre del area</label>
-                    <input [(ngModel)]="area.nombre" type="text" class="form-control" id="exampleFormControlInput1" name="nombre"
-                        placeholder="Ejemplo: Contabilidad">
+                    <input [(ngModel)]="area.nombre" type="text" class="form-control" id="exampleFormControlInput1"
+                        name="nombre" placeholder="Ejemplo: Contabilidad" (change)="cambio_botones_modificar()">
                 </div>
 
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Cantidad de personas que la
                         utilizan</label>
-                    <input type="number" [(ngModel)]="area.cantidadPersonas" name="cantidadPersonas"  class="form-control" id="exampleFormControlInput1"
-                        placeholder="Ejemplo: 20">
+                    <input type="number" [(ngModel)]="area.cantidadPersonas" name="cantidadPersonas"
+                        class="form-control" id="exampleFormControlInput1" placeholder="Ejemplo: 20" (change)="cambio_botones_modificar()">
                 </div>
 
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Horarios en que se utiliza</label>
-                    <input type="text"  [(ngModel)]="area.horarios" name="horarios" class="form-control" id="exampleFormControlInput1"
-                        placeholder="Ejemplo: 8:00 AM - 5:00 PM">
+                    <input type="text" [(ngModel)]="area.horarios" name="horarios" class="form-control"
+                        id="exampleFormControlInput1" placeholder="Ejemplo: 8:00 AM - 5:00 PM" (change)="cambio_botones_modificar()">
                 </div>
 
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Tipos de personal que utilizan el
                         area</label>
-                    <input type="text" [(ngModel)]="area.tiposPersonal" name="tiposPersonal" class="form-control" id="exampleFormControlInput1"
-                        placeholder="Ejemplo: Administrativo">
+                    <input type="text" [(ngModel)]="area.tiposPersonal" name="tiposPersonal" class="form-control"
+                        id="exampleFormControlInput1" placeholder="Ejemplo: Administrativo" (change)="cambio_botones_modificar()">
                 </div>
 
 
@@ -55,12 +59,14 @@
 
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Descirpción de uso del Area</label>
-                    <textarea class="form-control"  [(ngModel)]="area.descripcion" name="descripcion" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" [(ngModel)]="area.descripcion" name="descripcion"
+                        id="exampleFormControlTextarea1" rows="3" (change)="cambio_botones_modificar()"></textarea>
                 </div>
 
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Elementos que contiene el área</label>
-                    <textarea class="form-control"  [(ngModel)]="area.elementos" name="elementos" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" [(ngModel)]="area.elementos" name="elementos"
+                        id="exampleFormControlTextarea1" rows="3" (change)="cambio_botones_modificar()"></textarea>
                 </div>
 
 
@@ -72,9 +78,14 @@
 
 
             <div id="barra-opciones">
-                <button type="button" class="btn btn-success" *ngIf="botones_barra==false">Guardar información</button>
-                <button type="button" class="btn btn-primary" *ngIf="botones_barra==true">Modificar</button>
-                <button type="button" class="btn btn-danger" *ngIf="botones_barra==true">Eliminar</button>
+
+                <button type="button" class="btn btn-warning"  *ngIf="botones_barra==true" (click)="volver_vista_anterior()"> <i class="bi bi-arrow-left"></i>  </button>
+                <button type="button" class="btn btn-success" *ngIf="botones_barra==false"
+                    (click)="enviar_datos()">Guardar información</button>
+                <button type="button" class="btn btn-primary" *ngIf="botones_barra==true"
+                    (click)="actualizar_datos()" [disabled]="habilitar_btn_modificar">Modificar</button>
+                <button type="button" class="btn btn-danger" *ngIf="botones_barra==true" (click)="eliminar_area()">Eliminar</button>
+
             </div>
         </form>
 
