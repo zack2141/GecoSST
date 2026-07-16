@@ -16,7 +16,7 @@
                     <option *ngFor="let item of lista_nombres_areas" [ngValue]="item[0]">{{item[1]}}</option>
                 </select>
                 <button class="btn btn-outline-secondary" type="button" id="button-addon2"
-                    (click)="buscar_area()">Button</button>
+                    (click)="buscar_area()">Buscar</button>
             </div>
 
         </div>
@@ -87,6 +87,7 @@
                 <button type="button" class="btn btn-danger" *ngIf="botones_barra==true" (click)="eliminar_area()">Eliminar</button>
 
             </div>
+            
         </form>
 
 

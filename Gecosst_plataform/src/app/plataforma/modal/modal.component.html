@@ -1,0 +1,52 @@
+<!-- Modal -->
+
+
+<div class="modal-header">
+    <h1 class="modal-title fs-5" id="staticBackdropLabel">Crear Reporte de SST</h1>
+    <button type="button" class="btn-close" aria-label="Close" (click)="cerra_modal()"></button>
+</div>
+
+
+<div class="modal-body">
+
+    <div class="mb-3">
+
+        <label for="" class="form-label"> Tipo de reporte</label>
+        <select class="form-select" aria-label="Default select example" [(ngModel)]="objeto_reporte.tipoReporte" name="tipoReporte" >
+        <option selected>Seleccione una opción</option>
+        <option value="Condicion insegura">Condicion insegura</option>
+        <option value="Accidente">Accidente</option>
+        <option value="Incidente">Incidente</option>
+    </select>
+
+    </div>
+    
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Descripcion del reporte</label>
+        <input type="textarea" class="form-control" id="exampleFormControlInput1" placeholder="" [(ngModel)]="objeto_reporte.descripcion" name="descripcion">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Estado de la investigación</label>
+        <select class="form-select" aria-label="Default select example" [(ngModel)]="objeto_reporte.estado" name="estado">
+        <option selected>Seleccione una opción</option>
+        <option value="Abierta">Abierta</option>
+        <option value="Cerrada">Cerrada</option>
+        </select>
+    </div>
+    
+     <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Descripcion de las medidas de control</label> <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="objeto_reporte.descripcionMedidasControl" name="descripcionMedidasControl"></textarea>
+    </div>
+
+     <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Descripción de las acciones correctivas</label>
+         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="objeto_reporte.descripcionAccionesCorrectivas" name="descripcionAccionesCorrectivas"></textarea>
+    </div>
+
+</div>
+
+
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="cerra_modal()">Cerrar</button>
+    <button type="button" class="btn btn-primary" (click)="guardar_reporte()">Guardar</button>
+</div>

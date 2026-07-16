@@ -106,10 +106,11 @@ export class RegistroAreaComponent implements OnInit, AfterViewInit {
       (data) => {
 
         if (data == true) {
-          console.log("Area actualizada correctamente")
-          this.limpiar_formulario();
+            console.log("Area actualizada correctamente")
           this.lista_nombres_areas = [];
           this.lista_areas();
+
+          this.volver_vista_anterior();
         } else {
           console.log("Error al actualizar el area")
         }
@@ -119,6 +120,8 @@ export class RegistroAreaComponent implements OnInit, AfterViewInit {
         console.log(error)
       }
     )
+
+
 
   }
 

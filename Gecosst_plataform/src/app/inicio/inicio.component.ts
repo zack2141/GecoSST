@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { BarraNavegaciónService } from '../servicios/servicios-internos/barra-navegación.service';
 
 @Component({
   selector: 'app-inicio',
@@ -7,6 +8,14 @@ import { Component } from '@angular/core';
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.css', './imagenes.css']
 })
-export class InicioComponent {
+export class InicioComponent implements OnInit {
+
+  constructor(private servicio_barra:BarraNavegaciónService) {}
+
+  ngOnInit(): void {
+
+  
+  }
+
 
 }

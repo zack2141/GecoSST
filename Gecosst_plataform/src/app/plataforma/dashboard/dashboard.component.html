@@ -2,10 +2,69 @@
 
     <section class="dashboard-main-contendor">
 
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <!-- Tarjeta 1: Total de Reportes -->
+        <div class="card-dashboard card-reportes-totales">
+            <div class="card-header-dashboard">
+                <i class="bi bi-file-bar-graph-fill"></i>
+                <span>Total de Reportes Registrados</span>
+            </div>
+            <div class="card-body-dashboard">
+                <div class="main-stat">124</div>
+                <div class="sub-stats">
+                    <div class="sub-stat-item">
+                        <span class="label">Incidentes</span>
+                        <span class="value">45</span>
+                    </div>
+                    <div class="sub-stat-item">
+                        <span class="label">Accidentes</span>
+                        <span class="value">12</span>
+                    </div>
+                    <div class="sub-stat-item">
+                        <span class="label">Condiciones</span>
+                        <span class="value">67</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 2: Áreas Registradas -->
+        <div class="card-dashboard card-areas">
+            <div class="card-header-dashboard">
+                <i class="bi bi-building"></i>
+                <span>Áreas Registradas</span>
+            </div>
+            <div class="card-body-dashboard">
+                <div class="main-stat">8</div>
+                <p class="card-desc">Sedes y áreas de trabajo bajo monitoreo activo en SST.</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta 3: Reportes Resueltos -->
+        <div class="card-dashboard card-resueltos">
+            <div class="card-header-dashboard">
+                <i class="bi bi-check-circle-fill icon-success"></i>
+                <span>Reportes Resueltos</span>
+            </div>
+            <div class="card-body-dashboard">
+                <div class="main-stat text-success">96</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 77.4%"></div>
+                </div>
+                <p class="card-desc">77% de tasa de resolución global de incidentes.</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta 4: Faltantes por Resolver -->
+        <div class="card-dashboard card-pendientes">
+            <div class="card-header-dashboard">
+                <i class="bi bi-exclamation-triangle-fill icon-warning"></i>
+                <span>Pendientes por Resolver</span>
+            </div>
+            <div class="card-body-dashboard">
+                <div class="main-stat text-warning">28</div>
+                <p class="card-desc">Reportes en revisión que requieren acciones correctivas.</p>
+            </div>
+        </div>
         
     </section>
 
